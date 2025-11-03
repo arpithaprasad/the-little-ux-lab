@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Process | The Little UX Lab</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <h1>The Little UX Lab</h1>
+      <p class="tagline">A small studio to tinker with motion, color, and tactile interactions.</p>
+    </div>
+  </header>
+
+  <nav>
+    <ul class="nav-list">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+      <li><a href="process.html"class="nav-link">Process</a></li>
+      <li><a href="about.html"class="nav-link">About</a></li>
+      <li><button class="ghost-btn" id="toggle-cursor">Cursor Glow: On</button></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="process-intro">
+      <h2>Process & Design Thinking</h2>
+      <p>I approached <strong>The Little UX Lab</strong> like a small UX case study - identifying an area of curiosity, prototyping in code, testing motion concepts, and documenting insights.</p>
+    </section>
+
+    <section class="research-goals">
+      <h3>Framing the Exploration</h3>
+      <ul>
+        <li>How can motion communicate feedback and system status?</li>
+        <li>What timing and easing patterns feel natural?</li>
+        <li>When does animation shift from delight to distraction?</li>
+      </ul>
+    </section>
+
+    <section class="process-table">
+      <h3>Prototype Experiments</h3>
+      <table>
+        <thead><tr><th>Interaction</th><th>Technique Used</th><th>UX Principle</th></tr></thead>
+        <tbody>
+          <tr><td>Hover Card</td><td>CSS transform + transition</td><td>Feedback & Discoverability</td></tr>
+          <tr><td>Pulsing Button</td><td>CSS keyframes</td><td>Affordance</td></tr>
+          <tr><td>Expanding Tile</td><td>Transition & scale</td><td>Attention & Hierarchy</td></tr>
+          <tr><td>Toggle Reveal</td><td>JavaScript click event</td><td>User Control</td></tr>
+          <tr><td>Tooltip Icon</td><td>CSS hover + opacity transition</td><td>Guidance</td></tr>
+          <tr><td>Input Feedback</td><td>JS validation + style change</td><td>Error Prevention</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="process-steps">
+      <h3>My Workflow</h3>
+      <ol>
+        <li>Sketched out ideas focusing on motion and feedback.</li>
+        <li>Built low-fidelity browser prototypes using pure HTML/CSS.</li>
+        <li>Added lightweight JS for responsive and dynamic motion.</li>
+        <li>Refined timing, easing, and accessibility considerations.</li>
+      </ol>
+    </section>
+
+    <section class="motion-types">
+       <h3>Animation Types Explored</h3>
+        <ul>
+          <li><strong>CSS Approaches</strong>
+            <ul>
+              <li><strong>Transitions</strong> - hover & focus states for smooth affordance feedback</li>
+              <li><strong>Keyframes</strong> - continuous pulses, micro loops, and dynamic motion cues</li>
+              <li><strong>Transforms</strong> - scale, expand, and subtle rotations to emphasize discoverability</li>
+              <li><strong>Opacity & Visibility</strong> - fade-ins for tooltips and reveals</li>
+              <li><strong>Pseudo-classes</strong> - interactive responses (<code>:hover</code>, <code>:focus</code>, <code>:active</code>)</li>
+              <li><strong>Flex & Position Animations</strong> - reflows and card expansions for spatial feedback</li>
+            </ul>
+          </li>
+          <li><strong>Mapped to Experiments</strong>
+            <ul>
+              <li><strong>Hover Card</strong> - Transition (hover feedback)</li>
+              <li><strong>Pulse Button</strong> - Keyframe (looping pulse)</li>
+              <li><strong>Expanding Tile</strong> - Transform (scale & reveal)</li>
+              <li><strong>Toggle Reveal</strong> - Opacity / Visibility transitions</li>
+              <li><strong>Tooltip Icon</strong> - Position + opacity transition</li>
+              <li><strong>Input Feedback</strong> - Conditional state change + color transition</li>
+            </ul>
+          </li>
+        </ul>
+    </section>
+
+    <section class="takeaways">
+      <h3>Key Learnings</h3>
+      <ul>
+        <li>Motion communicates meaning when applied purposefully.</li>
+        <li>Building in code early bridges concept and usability.</li>
+        <li>Even micro-level design can evoke macro-level understanding.</li>
+      </ul>
+    </section>
+
+    <section class="next-steps">
+  <h3>Next Steps</h3>
+    <ul>
+      <li>Explore accessibility-focused animations - ensuring motion aids understanding without causing distraction.</li>
+      <li>Introduce user-controlled themes and motion preferences (e.g., reduced motion mode).</li>
+      <li>Refine transitions for mobile interactions and touch feedback.</li>
+      <li>Expand the gallery to include more UX concepts like loading states, confirmations, and success feedback.</li>
+      <li>Conduct quick usability tests to evaluate whether animations communicate their intended principles effectively.</li>
+    </ul>
+    <a class="cta-link" href="about.html">About Me →</a>
+  </section>
+  </main>
+
+  <footer id="footer">
+    <p>© 2025 Arpitha Prasad - The Little UX Lab</p>
+    <p class="muted">Design experiments — keep it curious.</p>
+  </footer>
+</body>
+</html>

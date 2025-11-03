@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery | The Little UX Lab</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <h1>The Little UX Lab</h1>
+      <p class="tagline">A small studio to tinker with motion, color, and tactile interactions.</p>
+    </div>
+  </header>
+
+  <nav>
+    <ul class="nav-list">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+      <li><a href="process.html" class="nav-link">Process</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><button class="ghost-btn" id="toggle-cursor-2">Cursor Glow: On</button></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="gallery-intro">
+      <h2>UX Microinteraction Experiments</h2>
+      <p>Each experiment explores a small design principle - feedback, affordance, discoverability or control - through simple web motion and behavior. Together, they form a hands-on study of how visual cues shape user experience.</p>
+    </section>
+
+    <section class="gallery">
+      <figure class="experiment-card">
+        <figcaption><strong>Hover Card</strong> - Feedback</figcaption>
+        <p class="hidden reveal">Reveals extra context when hovered to test progressive disclosure.</p>
+      </figure>
+
+      <figure class="experiment-card">
+        <figcaption><strong>Pulse Button</strong> - Affordance</figcaption>
+        <button class="pulse-btn" onclick="changeText(this)">Try me</button>
+        <p>Uses subtle pulsing to indicate interactivity.</p>
+      </figure>
+
+      <figure class="experiment-card">
+        <figcaption><strong>Expanding Tile</strong> - Discoverability</figcaption>
+        <div class="expand-box">
+          <p class="expand-text">Hover</p>
+          <p class="expand-description">Expands on hover to attract attention and communicate action.</p>
+        </div> 
+      </figure>
+
+      <figure class="experiment-card">
+        <figcaption><strong>Toggle Reveal</strong> - Control</figcaption>
+        <button class="toggle-btn" onclick="toggleReveal()">More information</button>
+        <p id="hidden-reveal" class="hidden">Revealed Content! Shows user control in action.</p>
+      </figure>
+
+      <figure class="experiment-card tooltip-card">
+        <figcaption><strong>Tooltip Icon</strong> - Guidance</figcaption>
+        <div class="tooltip-container">
+          <span class="tooltip-icon">💡</span>
+          <span class="tooltip-text">Helpful hints reduce friction and confusion.</span>
+        </div>
+        <p>Shows how subtle guidance enhances understanding.</p>
+      </figure>
+
+      <figure class="experiment-card input-card">
+        <figcaption><strong>Input Feedback</strong> - Error Prevention</figcaption>
+        <form class="feedback-form" onsubmit="return validateInput(event)">
+          <input type="text" id="nameInput" placeholder="Enter your name">
+          <button type="submit">Submit</button>
+          <p class="error-msg hidden">Please enter your name before submitting.</p>
+        </form>
+        <p>Tests how clear visual cues can reduce form errors.</p>
+      </figure>
+    </section>
+
+  <section class="reflection">
+      <h3>Observations</h3>
+      <ul>
+        <li>Minimal motion can communicate feedback effectively.</li>
+        <li>Color transitions feel natural when paired with spatial movement.</li>
+        <li>Instant response reassures users the system “heard” them.</li>
+      </ul>
+      <a class="cta-link" href="process.html">See Process →</a>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <p>© 2025 Arpitha Prasad - The Little UX Lab</p>
+    <p class="muted">Design experiments — keep it curious.</p>
+  </footer>
+</body>
+</html>
